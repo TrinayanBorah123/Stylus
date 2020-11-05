@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Oct 11 17:46:21 IST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-0166-630e-696e-000002ef7fb8 
+on database directory C:\Users\Trinayan\AppData\Roaming\NetBeans\Derby\stylus with class loader sun.misc.Launcher$AppClassLoader@42a57993 
+Loaded from file:/C:/Users/Trinayan/Documents/NetBeansProjects/StylusProject/dist/run2107786611/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_111-b14
+user.dir=C:\Users\Trinayan\Documents\NetBeansProjects\StylusProject
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
