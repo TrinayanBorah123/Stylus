@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="525.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stylusproject.EmployeeLoginDataFXMLController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0">
+         <children>
+            <Pane fx:id="lab" layoutX="-17.0" layoutY="-10.0" prefHeight="182.0" prefWidth="1385.0" style="-fx-background-color: #3243b5;">
+               <children>
+                  <Label layoutX="35.0" layoutY="81.0" text="Stylus" textFill="WHITE">
+                     <font>
+                        <Font name="Century Schoolbook" size="40.0" />
+                     </font>
+                  </Label>
+                  <JFXTabPane layoutX="26.0" layoutY="157.0" prefHeight="599.0" prefWidth="1353.0">
+                     <tabs>
+                        <Tab text="Employee ">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1349.0">
+                                 <children>
+                                    <HBox layoutX="323.0" layoutY="4.0" prefHeight="537.0" prefWidth="1031.0">
+                                       <children>
+                                          <TableView fx:id="EmpStatustable" prefHeight="537.0" prefWidth="1024.0">
+                                             <columns>
+                                                <TableColumn fx:id="datecolumn" prefWidth="217.0" text="Date" />
+                                                <TableColumn fx:id="workdonecolumn" prefWidth="196.0" text="Workdone" />
+                                                <TableColumn fx:id="statuscolumn" prefWidth="235.0" text="Status" />
+                                                <TableColumn fx:id="incomecolumn" prefWidth="207.0" text="Income" />
+                                                <TableColumn fx:id="worktypecolumn" prefWidth="165.0" text="Work Type" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </HBox>
+                                    <Label fx:id="lb" layoutX="14.0" layoutY="21.0" text="Employee Section">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="34.0" layoutY="44.0">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton buttonType="RAISED" layoutX="66.0" layoutY="100.0" onAction="#addData" prefHeight="29.0" prefWidth="186.0" style="-fx-background-color: #bb8c46;" text="Load Work Data" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="66.0" layoutY="253.0" onAction="#back" prefHeight="29.0" prefWidth="186.0" style="-fx-background-color: #bb8c46;" text="SignOut" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="66.0" layoutY="176.0" onAction="#passchg" prefHeight="29.0" prefWidth="186.0" style="-fx-background-color: #bb8c46;" text="Change Password" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

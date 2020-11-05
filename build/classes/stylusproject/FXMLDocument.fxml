@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stylusproject.FXMLDocumentController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="pane" prefHeight="900.0" prefWidth="1600.0">
+         <children>
+            <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+            <Pane fx:id="uppane" layoutX="-14.0" layoutY="-3.0" prefHeight="272.0" prefWidth="860.0" style="-fx-background-color: #3243b5;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0">
+               <children>
+                  <Label layoutX="179.0" layoutY="62.0" prefHeight="100.0" prefWidth="298.0" text="Stylus" textFill="WHITE">
+                     <font>
+                        <Font name="Century Schoolbook" size="80.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label fx:id="dvlab" layoutX="556.0" layoutY="641.0" prefHeight="27.0" prefWidth="200.0" text="Developed by- Trinayan Borah" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="88.0">
+               <font>
+                  <Font name="Century Schoolbook" size="14.0" />
+               </font>
+            </Label>
+            <Pane fx:id="cupane" layoutX="211.0" layoutY="470.0" prefHeight="230.0" prefWidth="360.0" style="-fx-border-color: #3243b5; -fx-background-color: #3243b5; -fx-border-width: 3;">
+               <children>
+                  <Pane layoutY="100.0" prefHeight="133.0" prefWidth="360.0" style="-fx-border-color: #3243b5; -fx-background-color: white; -fx-border-width: 3;">
+                     <children>
+                        <JFXButton fx:id="cust" buttonType="RAISED" layoutX="77.0" layoutY="47.0" onAction="#customer" prefHeight="39.0" prefWidth="206.0" style="-fx-background-color: #bb8c46;" text="CLICK HERE" textFill="WHITE">
+                           <font>
+                              <Font name="Century Schoolbook" size="20.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <Label layoutX="20.0" layoutY="40.0" text="Customer" textFill="WHITE">
+                     <font>
+                        <Font name="Century Schoolbook" size="42.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="841.0" layoutY="470.0" prefHeight="230.0" prefWidth="360.0" style="-fx-border-color: #3243b5; -fx-background-color: #3243b5; -fx-border-width: 3;">
+               <children>
+                  <Pane fx:id="boopane" layoutY="100.0" prefHeight="133.0" prefWidth="360.0" style="-fx-border-color: #3243b5; -fx-background-color: white; -fx-border-width: 3;">
+                     <children>
+                        <JFXButton fx:id="book" buttonType="RAISED" layoutX="77.0" layoutY="39.0" onAction="#booking" prefHeight="39.0" prefWidth="206.0" style="-fx-background-color: #bb8c46;" text="CLICK HERE" textFill="WHITE">
+                           <font>
+                              <Font name="Century Schoolbook" size="20.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <Label layoutX="21.0" layoutY="37.0" text="Booking" textFill="WHITE">
+                     <font>
+                        <Font name="Century Schoolbook" size="42.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="empane" layoutX="841.0" layoutY="164.0" prefHeight="230.0" prefWidth="360.0" style="-fx-border-color: white; -fx-border-width: 3;">
+               <children>
+                  <Label layoutX="20.0" layoutY="37.0" text="Employee" textFill="WHITE">
+                     <font>
+                        <Font name="Century Schoolbook" size="42.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutY="97.0" prefHeight="133.0" prefWidth="360.0" style="-fx-border-color: #3243b5; -fx-border-width: 3;">
+                     <children>
+                        <JFXButton fx:id="emp" buttonType="RAISED" layoutX="77.0" layoutY="47.0" onAction="#employee" prefHeight="39.0" prefWidth="206.0" style="-fx-background-color: #bb8c46;" text="CLICK HERE" textFill="WHITE">
+                           <font>
+                              <Font name="Century Schoolbook" size="20.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="owpane" layoutX="211.0" layoutY="164.0" prefHeight="230.0" prefWidth="360.0" style="-fx-border-color: white; -fx-border-width: 3;">
+               <children>
+                  <Pane layoutY="100.0" prefHeight="133.0" prefWidth="360.0" style="-fx-border-color: #3243b5; -fx-border-width: 3;">
+                     <children>
+                        <JFXButton fx:id="own" buttonType="RAISED" layoutX="77.0" layoutY="47.0" onAction="#owner" prefHeight="39.0" prefWidth="206.0" style="-fx-background-color: #bb8c46;" text="CLICK HERE" textFill="WHITE">
+                           <font>
+                              <Font name="Century Schoolbook" size="20.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <Label layoutX="14.0" layoutY="38.0" text="Owner" textFill="WHITE">
+                     <font>
+                        <Font name="Century Schoolbook" size="42.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label fx:id="dvlab1" layoutX="1078.0" layoutY="741.0" prefHeight="27.0" prefWidth="200.0" text="Contact : 8486449512">
+               <font>
+                  <Font name="Century Schoolbook" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

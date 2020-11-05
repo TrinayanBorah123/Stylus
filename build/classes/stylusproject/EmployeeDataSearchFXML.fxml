@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stylusproject.EmployeeDataSearchFXMLController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Pane fx:id="lab" prefHeight="178.0" prefWidth="800.0" style="-fx-background-color: #3243b5;">
+               <children>
+                  <Label layoutX="35.0" layoutY="81.0" text="Stylus" textFill="WHITE">
+                     <font>
+                        <Font name="Century Schoolbook" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lab2" layoutX="35.0" layoutY="138.0" text="Employee Status Check" textFill="WHITE">
+                     <font>
+                        <Font name="Century Schoolbook" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="400.0" layoutY="246.0" text="Date :">
+               <font>
+                  <Font name="Century Schoolbook" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="301.0" layoutY="337.0" prefHeight="19.0" prefWidth="79.0" text="Status :">
+               <font>
+                  <Font name="Century Schoolbook" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab1" layoutX="382.0" layoutY="338.0" text="__________________" />
+            <Label layoutX="67.0" layoutY="337.0" text="Workdone :">
+               <font>
+                  <Font name="Century Schoolbook" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab3" layoutX="173.0" layoutY="338.0" text="_________________" />
+            <JFXDatePicker fx:id="mdate" layoutX="471.0" layoutY="243.0" prefHeight="25.0" prefWidth="245.0" promptText="DD/MM/YYYY" />
+            <JFXButton buttonType="RAISED" layoutX="55.0" layoutY="406.0" onAction="#back" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #bb8c46;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Century Schoolbook" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="303.0" layoutY="406.0" onAction="#search" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #bb8c46;" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="Century Schoolbook" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="547.0" layoutY="406.0" onAction="#reset" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #bb8c46;" text="Reset" textFill="WHITE">
+               <font>
+                  <Font name="Century Schoolbook" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="50.0" layoutY="539.0" text="NOTE : Please enter the date in proper format (DD/MM/YYYY).">
+               <font>
+                  <Font name="Book Antiqua" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="246.0" text="User ID :">
+               <font>
+                  <Font name="Century Schoolbook" size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="id" layoutX="155.0" layoutY="243.0" prefHeight="25.0" prefWidth="200.0" promptText="userid" />
+            <Label layoutX="530.0" layoutY="337.0" text="Income :">
+               <font>
+                  <Font name="Century Schoolbook" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab4" layoutX="611.0" layoutY="338.0" prefHeight="17.0" prefWidth="102.0" text="___________________" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

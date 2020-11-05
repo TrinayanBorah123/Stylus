@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="stylusproject.EmployeeDataDeleteFXMLController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="463.0" prefWidth="700.0">
+               <children>
+                  <Pane fx:id="lab" prefHeight="200.0" prefWidth="700.0" style="-fx-background-color: #3243b5;">
+                     <children>
+                        <Label layoutX="35.0" layoutY="81.0" text="Stylus" textFill="WHITE">
+                           <font>
+                              <Font name="Century Schoolbook" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="isConnected" layoutX="43.0" layoutY="161.0" text="Employee Delete Page" textFill="WHITE">
+                           <font>
+                              <Font name="Century Schoolbook" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="148.0" layoutY="250.0" text="User ID :">
+                     <font>
+                        <Font name="Century Schoolbook" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="id" layoutX="279.0" layoutY="247.0" prefHeight="25.0" prefWidth="250.0" promptText="UserId" />
+                  <JFXButton buttonType="RAISED" layoutX="122.0" layoutY="339.0" onAction="#delete" prefHeight="30.0" prefWidth="220.0" style="-fx-background-color: #bb8c46;" text="Delete" textFill="WHITE">
+                     <font>
+                        <Font name="Century Schoolbook" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="384.0" layoutY="339.0" onAction="#home" prefHeight="30.0" prefWidth="220.0" style="-fx-background-color: #bb8c46;" text="Back" textFill="WHITE">
+                     <font>
+                        <Font name="Century Schoolbook" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

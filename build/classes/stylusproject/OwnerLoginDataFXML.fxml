@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stylusproject.OwnerLoginDataFXMLController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0">
+         <children>
+            <Pane fx:id="lab" layoutY="-7.0" prefHeight="183.0" prefWidth="1366.0" style="-fx-background-color: #3243b5;">
+               <children>
+                  <Label layoutX="35.0" layoutY="81.0" text="Stylus" textFill="WHITE">
+                     <font>
+                        <Font name="Century Schoolbook" size="55.0" />
+                     </font>
+                  </Label>
+                  <JFXTabPane layoutX="11.0" layoutY="157.0" prefHeight="600.0" prefWidth="1341.0">
+                     <tabs>
+                        <Tab text="Employee Status Dashboard">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1392.0">
+                                 <children>
+                                    <HBox layoutX="9.0" layoutY="8.0" prefHeight="452.0" prefWidth="1510.0">
+                                       <children>
+                                          <TableView fx:id="EmpStatustable" prefHeight="452.0" prefWidth="1319.0">
+                                             <columns>
+                                                <TableColumn fx:id="idcolumn" prefWidth="189.0" text="User ID" />
+                                                <TableColumn fx:id="emailcolumn" prefWidth="234.00001525878906" text="Email" />
+                                                <TableColumn fx:id="workdonecolumn" prefWidth="174.0" text="Work done" />
+                                                <TableColumn fx:id="statuscolumn" prefWidth="155.0" text="Status" />
+                                                <TableColumn fx:id="datecolumn" prefWidth="201.0" text="Date &amp; Time" />
+                                                <TableColumn fx:id="incomecolumn" prefWidth="184.0" text="Income" />
+                                                <TableColumn fx:id="worktypecolumn" prefWidth="180.0" text="Work Type" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </HBox>
+                                    <JFXButton buttonType="RAISED" layoutX="312.0" layoutY="479.0" onAction="#loaddata1" prefHeight="29.0" prefWidth="220.0" style="-fx-background-color: #bb8c46;" text="Load Data" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="45.0" layoutY="479.0" onAction="#mail" prefHeight="29.0" prefWidth="220.0" style="-fx-background-color: #bb8c46;" text="Send Mail" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="584.0" layoutY="479.0" onAction="#search1" prefHeight="29.0" prefWidth="220.0" style="-fx-background-color: #bb8c46;" text="Search Data" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="1104.0" layoutY="479.0" onAction="#signout" prefHeight="29.0" prefWidth="220.0" style="-fx-background-color: #bb8c46;" text="SignOut" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="850.0" layoutY="479.0" onAction="#passchg" prefHeight="29.0" prefWidth="220.0" style="-fx-background-color: #bb8c46;" text="Password Change" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Booked Customer">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox layoutX="246.0" layoutY="16.0" prefHeight="525.0" prefWidth="1092.0">
+                                       <children>
+                                          <TableView fx:id="BookedCusttable" prefHeight="447.0" prefWidth="1092.0">
+                                             <columns>
+                                                <TableColumn fx:id="Bfnamecolumn" prefWidth="241.0" text="First Name" />
+                                                <TableColumn fx:id="Blnamecolumn" prefWidth="288.0" text="Last Name" />
+                                                <TableColumn fx:id="Bphonecolumn" prefWidth="271.0" text="Phone" />
+                                                <TableColumn fx:id="Bdatecolumn" prefWidth="289.0" text="Booking date" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </HBox>
+                                    <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="60.0" onAction="#loaddata2" prefHeight="29.0" prefWidth="170.0" style="-fx-background-color: #bb8c46;" text="Load Data" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="240.0" onAction="#delete2" prefHeight="29.0" prefWidth="170.0" style="-fx-background-color: #bb8c46;" text="Delete" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="300.0" onAction="#signout" prefHeight="29.0" prefWidth="170.0" style="-fx-background-color: #bb8c46;" text="SignOut" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="fn" layoutX="35.0" layoutY="120.0" prefHeight="25.0" prefWidth="169.0" promptText="First Name" />
+                                    <JFXTextField fx:id="ph" layoutX="35.0" layoutY="180.0" prefHeight="25.0" prefWidth="169.0" promptText="Phone" />
+                                    <Label layoutX="35.0" layoutY="365.0" prefHeight="17.0" prefWidth="180.0" text="Note : Provide your name &amp; " />
+                                    <Label layoutX="70.0" layoutY="382.0" text="phone to delete data." />
+                                    <Label fx:id="st" layoutX="14.0" layoutY="16.0" text="Booked Customer detail">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="SMS Send &amp; Delete Section">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox layoutX="301.0" layoutY="9.0" prefHeight="534.0" prefWidth="1038.0">
+                                       <children>
+                                          <TableView fx:id="CustSMStable" prefHeight="396.0" prefWidth="1039.0">
+                                             <columns>
+                                                <TableColumn fx:id="CSMSfnamecolumn" prefWidth="352.0" text="First Name" />
+                                                <TableColumn fx:id="CSMSPhonecolumn" prefWidth="408.0" text="Phone Number" />
+                                                <TableColumn fx:id="CSMSCostcolumn" prefWidth="276.0" text="Cost" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </HBox>
+                                    <JFXButton buttonType="RAISED" layoutX="55.0" layoutY="350.0" onAction="#signout" prefHeight="29.0" prefWidth="200.0" style="-fx-background-color: #bb8c46;" text="SignOut" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="55.0" layoutY="305.0" onAction="#SmsSend" prefHeight="29.0" prefWidth="200.0" style="-fx-background-color: #bb8c46;" text="Send" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="phno" layoutX="55.0" layoutY="245.0" prefHeight="25.0" prefWidth="200.0" promptText="Phone Number" />
+                                    <JFXTextArea fx:id="message1" layoutX="55.0" layoutY="150.0" prefHeight="60.0" prefWidth="200.0" promptText="Write your message" />
+                                    <Label fx:id="lab1" layoutX="25.0" layoutY="28.0" text="Send SMS to Your Customer">
+                                       <font>
+                                          <Font name="Century Schoolbook Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton buttonType="RAISED" layoutX="55.0" layoutY="80.0" onAction="#loadcust" prefHeight="29.0" prefWidth="200.0" style="-fx-background-color: #bb8c46;" text="Load Data" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label layoutX="39.0" layoutY="397.0" text="NOTE : SMS can be sent from 9AM-9PM." />
+                                    <JFXButton buttonType="RAISED" layoutX="58.0" layoutY="434.0" onAction="#deleteEmp" prefHeight="29.0" prefWidth="200.0" style="-fx-background-color: #bb8c46;" text="Delete Employee Data" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="58.0" layoutY="484.0" onAction="#deleteAll" prefHeight="29.0" prefWidth="200.0" style="-fx-background-color: #bb8c46;" text="Delete All Customer Data" textFill="WHITE">
+                                       <font>
+                                          <Font name="Century Schoolbook" size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
